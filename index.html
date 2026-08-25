@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BSK Power Tree Pvt Ltd | Electrical Contracting & LT Panel Manufacturing</title>
+<meta name="description" content="BSK Power Tree Pvt Ltd — A Grade electrical contractors and LT panel manufacturers serving Telangana and Andhra Pradesh.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+:root{--ink:#06111c;--blue:#0877bd;--cyan:#18a8e8;--lime:#9bd24b;--gold:#f5b91b;--muted:#667788;--line:#dfe7ed;--paper:#f5f8fb;--dark:#05101a;--max:1240px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:"DM Sans",Arial,sans-serif;overflow-x:hidden}a{text-decoration:none;color:inherit}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}
+.nav{height:78px;position:fixed;inset:0 0 auto;background:#ffffffdb;backdrop-filter:blur(18px);border-bottom:1px solid #07111d10;z-index:50}.navin{height:100%;display:flex;align-items:center;justify-content:space-between}.brand img{height:68px;width:auto;display:block;transition:.2s}.links{display:flex;gap:28px;color:#536273;font-size:14px;font-weight:700}.links a:hover{color:var(--blue)}.navcta{padding:12px 18px;border-radius:9px;background:var(--blue);color:#fff;font-size:13px;font-weight:800;box-shadow:0 10px 25px #0877bd22}
+.hero{min-height:760px;padding:112px 0 70px;position:relative;background:#f7fbff;overflow:hidden}.heroGrid{display:grid;grid-template-columns:1fr .95fr;gap:65px;align-items:center}.kicker,.eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:900;color:var(--blue)}.kicker{margin-bottom:20px}h1{font-family:"Space Grotesk";font-size:clamp(56px,6.6vw,94px);line-height:.9;letter-spacing:-.065em;margin:0 0 28px;max-width:760px}h1 em{font-style:normal;color:var(--blue)}.lead{font-size:18px;line-height:1.7;color:var(--muted);max-width:630px;margin:0 0 32px}.actions{display:flex;gap:11px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 19px;border-radius:9px;border:1px solid #cfd9e2;font-size:14px;font-weight:800;transition:.2s}.btn:hover{transform:translateY(-2px)}.primary{background:var(--blue);border-color:var(--blue);color:#fff;box-shadow:0 13px 28px #0877bd26}
+.heroPhoto{height:560px;border-radius:25px;overflow:hidden;position:relative;background:#092033;box-shadow:0 35px 90px #06111c30}
+.heroSlides{position:absolute;inset:0}
+.heroSlide{position:absolute;inset:0;opacity:0;transform:scale(1.035);transition:opacity .8s ease,transform 5s ease;pointer-events:none}
+.heroSlide.active{opacity:1;transform:scale(1);pointer-events:auto}
+.heroSlide img{width:100%;height:100%;object-fit:cover;display:block}
+.heroArrow{position:absolute;z-index:5;top:50%;transform:translateY(-50%);width:42px;height:54px;border:0;border-radius:0;background:#06111cc2;color:#fff;font-size:34px;line-height:48px;cursor:pointer;backdrop-filter:blur(5px);transition:.2s;text-shadow:0 2px 8px #0008}
+.heroArrow:hover{background:#0877bd;transform:translateY(-50%) scale(1.04)}
+.heroPrev{left:0}.heroNext{right:0}
+.heroDots{position:absolute;z-index:6;right:24px;bottom:24px;display:flex;gap:6px}
+.heroDot{width:7px;height:7px;border-radius:50%;border:0;padding:0;background:#ffffff77;cursor:pointer;transition:.2s}
+.heroDot.active{width:23px;border-radius:8px;background:#fff}
+.heroPhoto img{width:100%;height:100%;object-fit:cover;object-position:center}.heroPhoto:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#06111c05 35%,#06111cbf 100%)}.heroCaption{position:absolute;z-index:2;bottom:24px;left:25px;color:#fff}.heroCaption b{display:block;font-family:"Space Grotesk";font-size:26px}.heroCaption span{font-size:11px;color:#d3e0e8;letter-spacing:.08em;text-transform:uppercase}
+.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.trustin{display:grid;grid-template-columns:repeat(4,1fr)}.trustItem{padding:25px 20px;border-right:1px solid var(--line)}.trustItem:last-child{border:0}.trustItem b{font-family:"Space Grotesk";font-size:24px}.trustItem span{display:block;color:var(--muted);font-size:12px;margin-top:3px}
+section{padding:76px 0}.head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:32px}.sectionTitle{font-family:"Space Grotesk";font-size:55px;line-height:.97;letter-spacing:-.055em;margin:12px 0 0}.sectionLead{color:var(--muted);line-height:1.7;max-width:540px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{border:1px solid var(--line);border-radius:18px;padding:30px;min-height:310px;background:#fff;transition:.25s}.card:hover{transform:translateY(-5px);box-shadow:0 22px 55px #06111c0d}.num{font-family:"Space Grotesk";font-size:11px;color:#9aabb8;font-weight:700}.card h3{font-family:"Space Grotesk";font-size:27px;letter-spacing:-.035em;margin:58px 0 10px}.card p{color:var(--muted);font-size:14px;line-height:1.7}.chips{display:flex;flex-wrap:wrap;gap:7px}.chip{border:1px solid var(--line);border-radius:100px;padding:6px 9px;font-size:10px;color:#536273}
+
+
+.dark{background:var(--dark);color:#fff}.dark .eyebrow{color:var(--lime)}.dark .sectionLead{color:#90a3b1}.process{display:grid;grid-template-columns:repeat(7,1fr);border:1px solid #ffffff15;border-radius:17px;overflow:hidden}.step{padding:22px 15px;min-height:230px;background:#081824;border-right:1px solid #ffffff15}.step:last-child{border:0}.step strong{font-size:11px;color:var(--lime)}.step h3{font-family:"Space Grotesk";font-size:18px;margin-top:48px;margin-bottom:8px}.step p{font-size:12px;line-height:1.6;color:#8094a2}
+.panelSection{background:#f5f8fb}
+.panelGrid{display:grid;grid-template-columns:.88fr 1.12fr;gap:52px;align-items:center}
+.panelCopy{padding-top:0}
+.panelSelector{display:grid;gap:7px;margin-top:27px}
+.panelSel{width:100%;border:1px solid #dce5eb;border-radius:10px;background:#fff;padding:12px 13px;display:grid;grid-template-columns:30px 1fr 18px;align-items:center;text-align:left;cursor:pointer;color:var(--ink);transition:.2s}
+.panelSel:hover{border-color:#9dc5da;transform:translateX(2px)}
+.panelSel.active{background:var(--blue);border-color:var(--blue);color:#fff;box-shadow:0 12px 28px #0877bd20}
+.panelIndex{font-family:"Space Grotesk";font-size:10px;opacity:.55}
+.panelSel b{font-family:"Space Grotesk";font-size:13px;display:block}
+.panelSel small{display:block;font-size:10px;margin-top:3px;opacity:.62}
+.panelSel strong{font-size:17px;text-align:right;opacity:.55}
+.panelSel.active .panelIndex,.panelSel.active small,.panelSel.active strong{opacity:.8}
+.panelVisual{display:flex;flex-direction:column;gap:12px}.panelShowcase{height:590px;border-radius:22px;overflow:hidden;position:relative;background:#071522;box-shadow:0 28px 65px #06111c20}
+.panelPhoto,.panelPhoto img,.panelPhotoShade{position:absolute;inset:0;width:100%;height:100%}
+.panelPhoto img{object-fit:cover;transition:opacity .25s,transform .6s}
+
+.panelPhotoCount{position:absolute;z-index:4;right:25px;top:25px;color:#fff;font-family:"Space Grotesk";font-size:10px;letter-spacing:.1em;background:#06111c99;border:1px solid #ffffff24;border-radius:999px;padding:7px 10px;backdrop-filter:blur(8px)}
+
+.panelPhotoShade{background:linear-gradient(180deg,#06111c05 20%,#06111ce8 100%)}
+.panelPhotoTitle{position:absolute;z-index:3;top:24px;left:25px;color:#fff}
+.panelPhotoTitle span{display:block;color:#b9e77d;font-size:9px;font-weight:900;letter-spacing:.13em}
+.panelPhotoTitle b{display:block;font-family:"Space Grotesk";font-size:25px;margin-top:4px}
+.panelSpecBox{position:relative;z-index:3;border:1px solid #ffffff24;background:#06111c;color:#fff;border-radius:14px;padding:17px;box-shadow:0 16px 35px #06111c18}
+.panelSpecIntro{display:flex;align-items:end;justify-content:space-between;gap:20px;padding-bottom:14px;border-bottom:1px solid #ffffff1f}
+.panelSpecIntro span{color:#b9e77d;font-size:9px;font-weight:900;letter-spacing:.12em}
+.panelSpecIntro p{margin:0;color:#d1dde5;font-size:11px;line-height:1.45;max-width:360px;text-align:right}
+.specGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:13px}
+.specGrid div{padding-right:10px;border-right:1px solid #ffffff17}
+.specGrid div:nth-child(3n){border-right:0}
+.specGrid b{display:block;font-family:"Space Grotesk";font-size:13px;color:#fff}
+.specGrid span{display:block;font-size:9px;color:#9eafbb;margin-top:3px}
+.panelBuild{margin-top:42px}
+.panelBuildHead{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:20px}
+.panelBuildHead h3{font-family:"Space Grotesk";font-size:28px;letter-spacing:-.04em;margin:7px 0 0}
+.panelBuildHead p{max-width:490px;color:var(--muted);font-size:12px;line-height:1.6;margin:0}
+.buildGrid{display:grid;grid-template-columns:repeat(6,1fr);border:1px solid #dbe5eb;border-radius:15px;overflow:hidden;background:#fff}
+.buildGrid div{padding:20px 15px;border-right:1px solid #e2e9ee}
+.buildGrid div:last-child{border-right:0}
+.buildGrid strong{display:block;font-family:"Space Grotesk";font-size:14px;letter-spacing:-.02em}
+.buildGrid span{display:block;color:#71818d;font-size:10px;line-height:1.45;margin-top:5px}
+.trustedComponents{margin-top:10px;padding:14px 17px;border:1px solid #dbe5eb;border-radius:12px;background:#fff;display:flex;align-items:center;gap:18px}
+.trustedComponents span{font-size:10px;color:#7b8b97;text-transform:uppercase;letter-spacing:.1em;margin-right:auto}
+.trustedComponents b{font-family:"Space Grotesk";font-size:13px;color:#425466;padding-left:18px;border-left:1px solid #e1e8ed}
+.panelInfo{position:absolute;z-index:2;left:24px;bottom:23px;color:#fff}.panelInfo b{font-family:"Space Grotesk";font-size:26px}.panelInfo p{margin:4px 0;color:#c2d2dc;font-size:12px}
+.gallery{display:grid;grid-template-columns:1.2fr .8fr;gap:14px}.galleryMain,.gallerySmall{border-radius:19px;overflow:hidden;position:relative;background:#dce8ee}.galleryMain{height:550px}.gallerySide{display:grid;gap:14px}.gallerySmall{height:268px}.gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:.5s}.gallery a:hover img{transform:scale(1.045)}.gLabel{position:absolute;left:20px;bottom:18px;z-index:2;color:#fff;text-shadow:0 2px 12px #000}.gLabel small{display:block;color:var(--lime);font-weight:900;text-transform:uppercase;letter-spacing:.1em}.gLabel b{font-family:"Space Grotesk";font-size:23px}
+.projectGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.project{height:360px;border-radius:18px;overflow:hidden;position:relative}.project img{width:100%;height:100%;object-fit:cover;transition:.5s}.project:hover img{transform:scale(1.04)}.project:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#06111c00 35%,#06111cbf 100%)}.projectText{position:absolute;z-index:2;left:22px;right:22px;bottom:20px;color:#fff}.projectText small{color:var(--lime);font-weight:900;letter-spacing:.12em;text-transform:uppercase}.projectText h3{font-family:"Space Grotesk";font-size:25px;margin:5px 0}.projectText p{font-size:11px;color:#d3dfe6;margin:0}
+.industries{background:var(--paper)}.industryGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.industry{height:150px;padding:22px;border:1px solid #d9e3ea;border-radius:15px;background:#fff;display:flex;align-items:end}.industry b{font-family:"Space Grotesk";font-size:18px}.industry span{display:block;color:var(--muted);font-size:11px;margin-top:4px}
+.clientBand{padding:62px 0;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.clientRow{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}.client{padding:13px 17px;border:1px solid var(--line);border-radius:100px;font-weight:700;color:#425466;font-size:13px}
+.cta{padding:62px 0}.ctaBox{background:linear-gradient(120deg,#0877bd,#075884);border-radius:24px;padding:58px;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:30px}.ctaBox h2{font-family:"Space Grotesk";font-size:53px;line-height:.98;letter-spacing:-.055em;margin:0 0 14px}.ctaBox p{color:#c9e4f1;margin:0;max-width:560px}.ctaBox .btn{background:#fff;border-color:#fff;color:#06111c}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:60px}.contact h2{font-family:"Space Grotesk";font-size:54px;line-height:.98;letter-spacing:-.055em;margin:12px 0 18px}.contact p{color:var(--muted);line-height:1.7}.form{display:grid;gap:10px}.field{padding:15px;border:1px solid var(--line);border-radius:9px;font:inherit;background:#fff}.form textarea{min-height:125px;resize:vertical}
+footer{padding:45px 0;background:#06111c;color:#94a8b7;font-size:12px}.foot{display:flex;justify-content:space-between;gap:30px}.foot b{font-family:"Space Grotesk";font-size:17px;color:#fff}.foot span{display:block;margin-top:5px}
+.reveal{opacity:0;transform:translateY(20px);transition:.7s}.reveal.show{opacity:1;transform:none}
+
+@media(max-width:950px){.panelShowcase{height:520px}.panelSpecIntro{align-items:flex-start;flex-direction:column}.panelSpecIntro p{text-align:left;max-width:none}.specGrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:950px){
+.panelGrid{grid-template-columns:1fr;gap:30px}
+.panelShowcase{height:520px}
+.buildGrid{grid-template-columns:repeat(3,1fr)}
+.buildGrid div:nth-child(3n){border-right:0}
+.buildGrid div:nth-child(-n+3){border-bottom:1px solid #e2e9ee}
+}
+@media(max-width:600px){
+.panelShowcase{height:500px}
+.panelSpecIntro{display:block}
+.panelSpecIntro p{text-align:left;margin-top:7px}
+.specGrid{grid-template-columns:repeat(2,1fr)}
+.specGrid div:nth-child(3n){border-right:1px solid #ffffff17}
+.specGrid div:nth-child(2n){border-right:0}
+.buildGrid{grid-template-columns:1fr 1fr}
+.buildGrid div:nth-child(3n){border-right:1px solid #e2e9ee}
+.buildGrid div:nth-child(2n){border-right:0}
+.buildGrid div:nth-child(-n+4){border-bottom:1px solid #e2e9ee}
+.panelBuildHead{display:block}.panelBuildHead p{margin-top:10px}
+.trustedComponents{flex-wrap:wrap}.trustedComponents span{width:100%;margin:0}.trustedComponents b{padding-left:12px}
+}
+
+@media(max-width:950px){.links{display:none}.heroGrid,.panelGrid,.contact{grid-template-columns:1fr}.heroPhoto{height:450px}.trustin{grid-template-columns:1fr 1fr}.trustItem:nth-child(2){border-right:0}.trustItem:nth-child(-n+2){border-bottom:1px solid var(--line)}.cards{grid-template-columns:1fr}.process{grid-template-columns:repeat(2,1fr)}.step:nth-child(2n){border-right:0}.step{border-bottom:1px solid #ffffff15}.gallery{grid-template-columns:1fr}.galleryMain{height:430px}.projectGrid{grid-template-columns:1fr 1fr}.industryGrid{grid-template-columns:1fr 1fr}.head{display:block}.head .sectionLead{margin-top:15px}}
+@media(max-width:600px){.panelShowcase{height:430px}.panelSpecBox{padding:14px}.specGrid{grid-template-columns:repeat(2,1fr);gap:8px}.wrap{width:calc(100% - 32px)}.brand img{height:58px}.navcta{padding:10px 12px;font-size:12px}.hero{padding-top:102px}.heroPhoto{height:350px}.heroArrow{width:38px;height:50px;font-size:29px}.heroDots{right:18px;bottom:18px}.sectionTitle,.contact h2,.ctaBox h2{font-size:40px}.process{grid-template-columns:1fr}.step{border-right:0}.projectGrid{grid-template-columns:1fr}.industryGrid{grid-template-columns:1fr 1fr}.ctaBox{display:block;padding:38px 27px}.ctaBox .btn{margin-top:23px}.foot{display:block}.foot div:last-child{margin-top:15px}}
+
+/* V8 responsive polish */
+html{scroll-padding-top:86px}
+img{max-width:100%}
+button,input,select,textarea{max-width:100%}
+.heroGrid>*,.panelGrid>*,.contact>*{min-width:0}
+.navin{min-width:0}
+@media (max-width:1199px){
+  :root{--max:1160px}
+  .wrap{width:min(var(--max),calc(100% - 40px))}
+  .heroGrid{grid-template-columns:1fr .92fr;gap:42px}
+  h1{font-size:clamp(52px,6vw,78px)}
+  .heroPhoto{height:520px}
+  .panelGrid{gap:36px}
+  .panelShowcase{height:540px}
+  .process{grid-template-columns:repeat(4,1fr)}
+  .step:nth-child(4n){border-right:0}
+  .step{border-bottom:1px solid #ffffff15}
+}
+@media (max-width:1024px){
+  section{padding:66px 0}
+  .nav{height:74px}
+  .brand img{height:62px}
+  .links{display:none}
+  .hero{min-height:auto;padding:104px 0 56px}
+  .heroGrid{grid-template-columns:1fr;gap:34px}
+  .heroGrid>div:first-child{max-width:760px}
+  .heroPhoto{height:min(62vw,520px);min-height:400px}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .card[style*="grid-column"]{grid-column:1/-1!important}
+  .panelGrid{grid-template-columns:1fr;gap:30px;align-items:start}
+  .panelCopy{max-width:820px}
+  .panelVisual{width:100%}
+  .panelShowcase{height:min(66vw,600px);min-height:460px}
+  .gallery{grid-template-columns:1fr}
+  .galleryMain{height:min(58vw,500px);min-height:360px}
+  .gallerySide{grid-template-columns:1fr 1fr}
+  .gallerySmall{height:260px}
+  .projectGrid{grid-template-columns:repeat(2,1fr)}
+  .industryGrid{grid-template-columns:repeat(2,1fr)}
+  .contact{grid-template-columns:1fr;gap:36px}
+}
+@media (max-width:767px){
+  .wrap{width:calc(100% - 32px)}
+  .nav{height:68px}
+  .brand img{height:56px}
+  .navcta{padding:10px 13px;font-size:12px;white-space:nowrap}
+  section{padding:56px 0}
+  .hero{padding:92px 0 44px}
+  .kicker{font-size:9px;letter-spacing:.12em;margin-bottom:16px}
+  h1{font-size:clamp(44px,12.5vw,62px);line-height:.92;letter-spacing:-.06em;margin-bottom:22px}
+  .lead{font-size:16px;line-height:1.62;margin-bottom:25px}
+  .actions{display:grid;grid-template-columns:1fr;gap:9px}
+  .actions .btn{width:100%}
+  .heroPhoto{height:78vw;min-height:300px;max-height:430px;border-radius:18px}
+  .heroArrow{width:34px;height:48px;font-size:28px}
+  .heroCaption{left:17px;right:17px;bottom:17px}
+  .heroCaption b{font-size:clamp(17px,5vw,22px)}
+  .heroCaption span{font-size:9px;line-height:1.4;display:block;max-width:85%}
+  .heroDots{right:16px;bottom:17px}
+  .trustin{grid-template-columns:1fr 1fr}
+  .trustItem{padding:18px 14px}
+  .trustItem b{font-size:19px}
+  .trustItem span{font-size:10px}
+  .head{margin-bottom:25px}
+  .sectionTitle,.contact h2,.ctaBox h2{font-size:clamp(36px,10vw,48px);line-height:.98}
+  .sectionLead{font-size:14px;line-height:1.6}
+  .cards{grid-template-columns:1fr;gap:12px}
+  .card,.card[style*="grid-column"]{grid-column:auto!important;min-height:auto!important;padding:24px}
+  .card h3{font-size:25px;margin:38px 0 9px}
+  .card p{font-size:13px;line-height:1.6}
+  .chips{gap:6px}
+  .chip{font-size:9px;padding:5px 8px}
+  .process{grid-template-columns:1fr;border-radius:14px}
+  .step{min-height:auto;padding:22px 18px;border-right:0!important;border-bottom:1px solid #ffffff15}
+  .step:last-child{border-bottom:0}
+  .step h3{margin-top:26px}
+  .panelShowcase{height:78vw;min-height:330px;max-height:460px;border-radius:18px}
+  .panelPhotoTitle{left:17px;top:17px;right:70px}
+  .panelPhotoTitle b{font-size:clamp(19px,5.5vw,25px)}
+  .panelPhotoCount{right:15px;top:15px;font-size:9px;padding:6px 8px}
+  .panelSpecBox{padding:14px;border-radius:12px}
+  .panelSpecIntro{display:block}
+  .panelSpecIntro p{text-align:left;max-width:none;margin-top:7px}
+  .specGrid{grid-template-columns:1fr 1fr;gap:0}
+  .specGrid div{padding:11px 8px 11px 0;border-right:0;border-bottom:1px solid #ffffff17}
+  .specGrid div:nth-last-child(-n+2){border-bottom:0}
+  .panelBuild{margin-top:30px}
+  .panelBuildHead{display:block;margin-bottom:15px}
+  .panelBuildHead p{margin-top:8px}
+  .buildGrid{grid-template-columns:1fr 1fr}
+  .buildGrid div:nth-child(2n){border-right:0}
+  .buildGrid div{border-bottom:1px solid #e2e9ee}
+  .buildGrid div:nth-last-child(-n+2){border-bottom:0}
+  .trustedComponents{align-items:flex-start;flex-wrap:wrap;gap:9px}
+  .trustedComponents span{width:100%;margin-right:0}
+  .trustedComponents b{padding-left:0;border-left:0;margin-right:14px}
+  .galleryMain{height:72vw;min-height:280px}
+  .gallerySide{grid-template-columns:1fr;gap:12px}
+  .gallerySmall{height:58vw;min-height:220px}
+  .projectGrid{grid-template-columns:1fr}
+  .project{height:72vw;min-height:280px;max-height:390px}
+  .industryGrid{grid-template-columns:1fr 1fr;gap:9px}
+  .industry{height:125px;padding:17px}
+  .industry b{font-size:16px}
+  .clientBand{padding:48px 0}
+  .clientRow{gap:7px}
+  .client{padding:10px 13px;font-size:11px}
+  .ctaBox{display:block;padding:32px 22px}
+  .ctaBox .btn{margin-top:20px;width:100%}
+  .form{gap:9px}
+  .field{width:100%;padding:14px;font-size:16px}
+  .form .btn{width:100%}
+  .foot{display:block}
+  .foot div:last-child{margin-top:15px}
+}
+@media (max-width:420px){
+  .wrap{width:calc(100% - 24px)}
+  .navcta{padding:9px 10px;font-size:11px}
+  .brand img{height:52px}
+  .hero{padding-top:86px}
+  h1{font-size:clamp(40px,12.8vw,52px)}
+  .heroPhoto{height:82vw;min-height:285px}
+  .heroArrow{width:30px;height:44px}
+  .heroDots{gap:4px}
+  .heroDot{width:6px;height:6px}
+  .heroDot.active{width:18px}
+  .trustin{grid-template-columns:1fr}
+  .trustItem{border-right:0!important;border-bottom:1px solid var(--line)}
+  .trustItem:last-child{border-bottom:0}
+  .sectionTitle,.contact h2,.ctaBox h2{font-size:36px}
+  .industryGrid{grid-template-columns:1fr}
+  .industry{height:108px}
+  .panelShowcase{height:90vw;min-height:300px}
+  .panelSpecIntro p{font-size:10px}
+  .specGrid b{font-size:12px}
+  .specGrid span{font-size:8px}
+}
+@media (max-width:359px){
+  .navcta{font-size:10px;padding:8px 8px}
+  .brand img{height:48px}
+  h1{font-size:38px}
+  .heroPhoto{min-height:260px}
+  .panelShowcase{min-height:270px}
+}
+
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap navin">
+<a class="brand" href="#"><img src="assets/logo.jpg" alt="BSK Power Tree Pvt Ltd"></a>
+<nav class="links"><a href="#capabilities">Capabilities</a><a href="#process">How We Work</a><a href="#panels">Panels</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+<a class="navcta" href="#contact">Get a Quote →</a>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap heroGrid">
+<div class="reveal"><div class="kicker">A Grade Electrical Contractors • LT Panel Manufacturing</div>
+<h1>Powering the <em>projects</em> that move Hyderabad.</h1>
+<p class="lead">BSK Power Tree delivers complete electrical contracting and custom LT panel solutions across Telangana and Andhra Pradesh — from electrical planning and transformer erection to underground cabling, panel installation and commissioning.</p>
+<div class="actions"><a class="btn primary" href="#capabilities">Explore Our Capabilities →</a><a class="btn" href="#contact">Start a Project</a></div></div>
+<div class="heroPhoto reveal" id="heroCarousel">
+  <div class="heroSlides">
+    <div class="heroSlide active"><img src="assets/project-12.jpeg" alt="BSK electrical infrastructure project"></div>
+    <div class="heroSlide"><img src="assets/project-13.jpeg" alt="BSK electrical infrastructure project"></div>
+    <div class="heroSlide"><img src="assets/project-14.jpeg" alt="BSK electrical infrastructure project"></div>
+    <div class="heroSlide"><img src="assets/project-15.jpeg" alt="BSK electrical infrastructure project"></div>
+    <div class="heroSlide"><img src="assets/project-16.jpeg" alt="BSK electrical infrastructure project"></div>
+    <div class="heroSlide"><img src="assets/project-17.jpeg" alt="BSK electrical infrastructure project"></div>
+    <div class="heroSlide"><img src="assets/project-18.jpeg" alt="BSK electrical infrastructure project"></div>
+    <div class="heroSlide"><img src="assets/project-19.jpeg" alt="BSK electrical infrastructure project"></div>
+    <div class="heroSlide"><img src="assets/project-5.jpeg" alt="BSK electrical infrastructure project"></div>
+    <div class="heroSlide"><img src="assets/project-6.jpeg" alt="BSK electrical infrastructure project"></div>
+  </div>
+  <button class="heroArrow heroPrev" type="button" aria-label="Previous project photo">‹</button>
+  <button class="heroArrow heroNext" type="button" aria-label="Next project photo">›</button>
+  <div class="heroCaption"><b>ENGINEERED ELECTRICAL SYSTEMS</b><span>Panel Manufacturing • Site Execution • Commissioning</span></div>
+  <div class="heroDots" aria-label="Project photo navigation"></div>
+</div>
+</div></section>
+
+<div class="trust"><div class="wrap trustin">
+<div class="trustItem"><b>A Grade</b><span>Electrical contractor</span></div><div class="trustItem"><b>TS + AP</b><span>Project coverage</span></div><div class="trustItem"><b>End-to-End</b><span>Electrical execution</span></div><div class="trustItem"><b>LT Panels</b><span>Custom manufacturing</span></div>
+</div></div>
+
+<section id="capabilities"><div class="wrap">
+<div class="head reveal">
+  <div><div class="eyebrow">What BSK does</div><h2 class="sectionTitle">One electrical partner.<br>From approval to energisation.</h2></div>
+  <p class="sectionLead">BSK handles the complete electrical scope for residential, commercial and layout projects — including panels, power infrastructure, cable management, building electrification, lighting and department approvals.</p>
+</div>
+
+<div class="cards">
+  <article class="card reveal">
+    <div class="num">01 / PANELS & CONTROL</div>
+    <h3>LT Panel Manufacturing</h3>
+    <p>Application-specific LT panels manufactured for power distribution, motor control, metering and automation requirements.</p>
+    <div class="chips"><span class="chip">PCC</span><span class="chip">MCC</span><span class="chip">APFC</span><span class="chip">ATS</span><span class="chip">Feeder Pillars</span><span class="chip">Meter Boards</span><span class="chip">Plot Boxes</span><span class="chip">Street Light Panels</span></div>
+  </article>
+
+  <article class="card reveal">
+    <div class="num">02 / POWER INFRASTRUCTURE</div>
+    <h3>Power Distribution</h3>
+    <p>Complete infrastructure from incoming power to project distribution, including transformer erection and LT electrical systems.</p>
+    <div class="chips"><span class="chip">Transformer Erection</span><span class="chip">HT / LT</span><span class="chip">Underground Cabling</span><span class="chip">Cable Termination</span><span class="chip">Distribution</span></div>
+  </article>
+
+  <article class="card reveal">
+    <div class="num">03 / CABLE MANAGEMENT</div>
+    <h3>Cable Trays & Routing</h3>
+    <p>A major part of our execution scope — organised cable support and routing for power, control and building services.</p>
+    <div class="chips"><span class="chip">Cable Trays</span><span class="chip">Cable Ladders</span><span class="chip">Supports</span><span class="chip">Routing</span><span class="chip">Fabrication</span></div>
+  </article>
+
+  <article class="card reveal">
+    <div class="num">04 / BUILDING ELECTRICAL</div>
+    <h3>Internal Electrical Works</h3>
+    <p>Electrical systems inside the building, from distribution boards and switchboards to wiring, points, fixtures and final connections.</p>
+    <div class="chips"><span class="chip">Internal Wiring</span><span class="chip">DBs</span><span class="chip">Switchboards</span><span class="chip">Switches & Sockets</span><span class="chip">Lighting Fixtures</span><span class="chip">Fan Fixtures</span></div>
+  </article>
+
+  <article class="card reveal">
+    <div class="num">05 / LIGHTING & EXTERNAL</div>
+    <h3>Lighting Infrastructure</h3>
+    <p>Complete outdoor and common-area lighting for roads, layouts, residential developments and commercial projects.</p>
+    <div class="chips"><span class="chip">Street Lights</span><span class="chip">Road Lighting</span><span class="chip">Layout Lighting</span><span class="chip">Landscape</span><span class="chip">Decorative</span><span class="chip">Poles</span></div>
+  </article>
+
+  <article class="card reveal">
+    <div class="num">06 / PROJECT ELECTRIFICATION</div>
+    <h3>Complete Site Electrification</h3>
+    <p>Electrical execution for projects from the external infrastructure through the building and common areas.</p>
+    <div class="chips"><span class="chip">Residential</span><span class="chip">Villas</span><span class="chip">Apartments</span><span class="chip">Commercial</span><span class="chip">Layouts</span><span class="chip">Industrial</span></div>
+  </article>
+
+  <article class="card reveal" style="grid-column:1/-1;min-height:245px;background:linear-gradient(120deg,#061522,#0b3651);color:#fff;border-color:#143f59">
+    <div class="num" style="color:#b9e77d">07 / APPROVALS & LIAISON</div>
+    <h3 style="margin-top:42px">Electrical Approvals, Handled Cleanly.</h3>
+    <p style="color:#b8c9d5;max-width:780px">We manage electrical approval processes with the concerned Electricity Department — documentation, submission, coordination, inspection follow-up and compliance — with a focus on keeping projects moving quickly and cleanly.</p>
+    <div class="chips"><span class="chip" style="border-color:#ffffff2d;color:#fff">Documentation</span><span class="chip" style="border-color:#ffffff2d;color:#fff">Submission</span><span class="chip" style="border-color:#ffffff2d;color:#fff">Department Coordination</span><span class="chip" style="border-color:#ffffff2d;color:#fff">Inspection Follow-up</span><span class="chip" style="border-color:#ffffff2d;color:#fff">Compliance</span></div>
+  </article>
+</div>
+
+</div></section>
+
+<section class="dark" id="process"><div class="wrap">
+<div class="head reveal"><div><div class="eyebrow">Our workflow</div><h2 class="sectionTitle">From plan<br>to power.</h2></div><p class="sectionLead">A connected workflow keeps engineering decisions, manufacturing and site execution moving in the same direction.</p></div>
+<div class="process reveal">
+<div class="step"><strong>01</strong><h3>Plan</h3><p>Understand the project, load and electrical requirements.</p></div>
+<div class="step"><strong>02</strong><h3>Design</h3><p>Electrical planning, layouts and system coordination.</p></div>
+<div class="step approvalStep"><strong>03</strong><h3>Approve</h3><p>Coordinate with the Electricity Department and consultant to secure the required approvals.</p></div>
+<div class="step"><strong>04</strong><h3>Build</h3><p>Manufacture and assemble application-specific LT panels.</p></div>
+<div class="step"><strong>05</strong><h3>Install</h3><p>Transformers, cables, panels, wiring and field equipment.</p></div>
+<div class="step"><strong>06</strong><h3>Test</h3><p>Check systems and connections before energisation.</p></div>
+<div class="step"><strong>07</strong><h3>Commission</h3><p>Bring the complete electrical system into service.</p></div>
+</div></div></section>
+
+<section class="panelSection" id="panels"><div class="wrap panelGrid">
+<div class="panelCopy reveal">
+  <div class="eyebrow">Panel Manufacturing</div>
+  <h2 class="sectionTitle">Built for the way<br>your project draws power.</h2>
+  <p class="sectionLead">BSK manufactures application-specific LT panels with engineered busbar systems, robust CRCA enclosures and carefully selected electrical components.</p>
+
+  <div class="panelSelector">
+    <button class="panelSel active" type="button" data-key="pcc"><span class="panelIndex">01</span><span><b>PCC Panels</b><small>Main LT power distribution</small></span><strong>→</strong></button>
+    <button class="panelSel" type="button" data-key="apfc"><span class="panelIndex">02</span><span><b>APFC Panels</b><small>Automatic power-factor correction</small></span><strong>→</strong></button>
+    <button class="panelSel" type="button" data-key="pdb"><span class="panelIndex">03</span><span><b>Power Distribution Boxes</b><small>Compact distribution & protection</small></span><strong>→</strong></button>
+    <button class="panelSel" type="button" data-key="feeder"><span class="panelIndex">04</span><span><b>Feeder Pillars</b><small>Outdoor distribution systems</small></span><strong>→</strong></button>
+    <button class="panelSel" type="button" data-key="meter"><span class="panelIndex">05</span><span><b>Meter Boards</b><small>Metering & organised distribution</small></span><strong>→</strong></button>
+    <button class="panelSel" type="button" data-key="custom"><span class="panelIndex">06</span><span><b>Custom LT Panels</b><small>Engineered around your requirements</small></span><strong>→</strong></button>
+  </div>
+</div>
+
+<div class="panelVisual reveal">
+  <div class="panelShowcase">
+    <div class="panelPhoto"><img id="panelImage" src="assets/pcc-panel-1.jpeg" alt="BSK PCC panel"></div>
+    <div class="panelPhotoShade"></div><div class="panelPhotoCount" id="panelPhotoCount"></div>
+    <div class="panelPhotoTitle"><span>BSK POWER SYSTEMS</span><b id="panelName">PCC PANELS</b></div>
+  </div>
+  <div class="panelSpecBox">
+    <div class="panelSpecIntro"><span id="panelTag">MAIN DISTRIBUTION</span><p id="panelDesc">Main LT power distribution and protection for project electrical systems.</p></div>
+    <div class="specGrid" id="specGrid">
+      <div><b>63–4000A</b><span>Incomers</span></div>
+      <div><b>MCCB / ACB</b><span>Protection</span></div>
+      <div><b>AL BUSBAR</b><span>High-quality system</span></div>
+      <div><b>CRCA</b><span>1.6 / 2.0 mm</span></div>
+      <div><b>IP55</b><span>Outdoor options</span></div>
+      <div><b>FRLS</b><span>Polycab wiring</span></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="wrap panelBuild reveal">
+  <div class="panelBuildHead"><div><div class="eyebrow">Built into every panel</div><h3>Engineering details that matter.</h3></div><p>From enclosure fabrication to internal wiring, BSK focuses on clean construction, reliable components and application-specific assembly.</p></div>
+  <div class="buildGrid">
+    <div><strong>63–4000A</strong><span>MCCB & ACB incomers</span></div>
+    <div><strong>AL BUSBARS</strong><span>High-quality aluminium busbar systems with precise fabrication & installation</span></div>
+    <div><strong>1.6 / 2.0 MM</strong><span>CRCA sheet enclosures</span></div>
+    <div><strong>7-TANK</strong><span>Surface treatment & powder-coating process</span></div>
+    <div><strong>UP TO IP55</strong><span>Outdoor panel protection</span></div>
+    <div><strong>POLYCAB FRLS</strong><span>Premium FRLS internal wiring</span></div>
+  </div>
+  <div class="trustedComponents"><span>Components we trust</span><b>L&T / LK</b><b>Elmeasure</b><b>Polycab</b></div>
+</div>
+</section>
+
+<section id="projects"><div class="wrap">
+<div class="head reveal"><div><div class="eyebrow">Real BSK work</div><h2 class="sectionTitle">Projects are<br>our proof.</h2></div><p class="sectionLead">These are actual photographs supplied for the BSK website. We can turn each major project into a dedicated case study once you provide project names and scope.</p></div>
+<div class="gallery">
+<a class="galleryMain reveal" href="assets/apfc-panel-1.jpeg" target="_blank"><img src="assets/apfc-panel-1.jpeg" alt="BSK transformer installation"><div class="gLabel"><small>Electrical Infrastructure</small><b>Transformer & Site Power</b></div></a>
+<div class="gallerySide"><a class="gallerySmall reveal" href="assets/pcc-panel-1.jpeg" target="_blank"><img src="assets/pcc-panel-1.jpeg" alt="BSK LT panels"><div class="gLabel"><small>Panel Manufacturing</small><b>LT Panel Systems</b></div></a>
+<a class="gallerySmall reveal" href="assets/meter-board-4.jpeg" target="_blank"><img src="assets/meter-board-4.jpeg" alt="BSK residential electrical project"><div class="gLabel"><small>Residential / Layout</small><b>Complete Site Execution</b></div></a></div>
+</div>
+<div class="projectGrid" style="margin-top:14px">
+<a class="project reveal" href="assets/feeder-pillar-1.jpeg" target="_blank"><img src="assets/feeder-pillar-1.jpeg" alt="BSK transformer installation"><div class="projectText"><small>Infrastructure</small><h3>Transformer Installation</h3><p>Site electrical infrastructure and power distribution.</p></div></a>
+<a class="project reveal" href="assets/pdb-floor-panel.jpeg" target="_blank"><img src="assets/pdb-floor-panel.jpeg" alt="BSK panel manufacturing"><div class="projectText"><small>Manufacturing</small><h3>Panel Assembly</h3><p>Custom LT panel builds.</p></div></a>
+<a class="project reveal" href="assets/meter-board-5.jpeg" target="_blank"><img src="assets/meter-board-5.jpeg" alt="BSK panel installation"><div class="projectText"><small>Commercial</small><h3>Installed Power Systems</h3><p>Panel installation and project execution.</p></div></a>
+</div></div></section>
+
+<section class="industries"><div class="wrap"><div class="head reveal"><div><div class="eyebrow">Where we work</div><h2 class="sectionTitle">Built for Telangana.<br>Ready for more.</h2></div><p class="sectionLead">Projects across Telangana and Andhra Pradesh, with a strong presence in Hyderabad, Sangareddy and Zaheerabad.</p></div>
+<div class="industryGrid"><div class="industry reveal"><div><b>Commercial</b><span>Buildings & developments</span></div></div><div class="industry reveal"><div><b>Residential</b><span>Projects & communities</span></div></div><div class="industry reveal"><div><b>Layouts</b><span>Complete infrastructure</span></div></div><div class="industry reveal"><div><b>Industrial</b><span>Electrical distribution</span></div></div></div></div></section>
+
+<section class="clientBand"><div class="wrap"><div class="eyebrow">Trusted by project teams</div><h2 class="sectionTitle" style="font-size:42px">Built with clients<br>who build at scale.</h2><div class="clientRow"><div class="client">Silpa Infratech</div><div class="client">Sikhara Homes</div><div class="client">Alekhya Homes</div><div class="client">Essen Infra</div></div></div></section>
+
+<section class="cta"><div class="wrap"><div class="ctaBox reveal"><div><h2>Have a project<br>to power?</h2><p>Send your requirement, BOQ, drawing or project brief. Let's work out the electrical scope together.</p></div><a class="btn" href="#contact">Start Your Enquiry →</a></div></div></section>
+
+<section id="contact"><div class="wrap contact"><div class="reveal"><div class="eyebrow">Talk to BSK</div><h2>Let's build the electrical backbone.</h2><p>For the final website, this enquiry form can connect directly to your email, WhatsApp or CRM and accept SLDs, BOQs and drawings.</p><p><strong>Service area:</strong> Telangana & Andhra Pradesh<br><strong>Focus locations:</strong> Hyderabad • Sangareddy • Zaheerabad</p></div>
+<form class="form reveal" onsubmit="event.preventDefault();alert('Sample enquiry received. We will connect this to BSK on the live deployment.');"><input class="field" required placeholder="Name"><input class="field" required placeholder="Phone number"><input class="field" placeholder="Company / Project"><select class="field"><option>What do you need?</option><option>LT Panel Manufacturing</option><option>Electrical Contracting</option><option>Complete Layout Electrical Works</option><option>Panel Installation / Commissioning</option><option>Other</option></select><textarea class="field" placeholder="Tell us about the project..."></textarea><button class="btn primary" type="submit">Send Project Enquiry →</button></form></div></section>
+</main>
+
+<footer><div class="wrap foot"><div><b>BSK POWER TREE PVT LTD</b><span>Electrical Contracting • LT Panel Manufacturing</span></div><div>© 2026 BSK Power Tree Pvt Ltd</div></div></footer>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show")}),{threshold:.1});
+document.querySelectorAll(".reveal").forEach(x=>io.observe(x));
+
+// Hero project-photo carousel: autoplay, arrows, dots and mobile swipe.
+const hero = document.getElementById("heroCarousel");
+if (hero) {
+  const slides = [...hero.querySelectorAll(".heroSlide")];
+  const dotsWrap = hero.querySelector(".heroDots");
+  let current = 0, timer, touchStartX = 0;
+
+  slides.forEach((_, i) => {
+    const dot = document.createElement("button");
+    dot.className = "heroDot" + (i === 0 ? " active" : "");
+    dot.type = "button";
+    dot.setAttribute("aria-label", `Show project photo ${i + 1}`);
+    dot.addEventListener("click", () => showSlide(i, true));
+    dotsWrap.appendChild(dot);
+  });
+  const dots = [...dotsWrap.children];
+
+  function showSlide(index, userAction=false) {
+    current = (index + slides.length) % slides.length;
+    slides.forEach((s,i) => s.classList.toggle("active", i === current));
+    dots.forEach((d,i) => d.classList.toggle("active", i === current));
+    if (userAction) restart();
+  }
+  function next(){ showSlide(current + 1); }
+  function restart(){ clearInterval(timer); timer = setInterval(next, 4200); }
+
+  hero.querySelector(".heroPrev").addEventListener("click", () => showSlide(current - 1, true));
+  hero.querySelector(".heroNext").addEventListener("click", () => showSlide(current + 1, true));
+  hero.addEventListener("mouseenter", () => clearInterval(timer));
+  hero.addEventListener("mouseleave", restart);
+  hero.addEventListener("touchstart", e => touchStartX = e.changedTouches[0].clientX, {passive:true});
+  hero.addEventListener("touchend", e => {
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(dx) > 45) showSlide(current + (dx < 0 ? 1 : -1), true);
+  }, {passive:true});
+  restart();
+}
+
+
+</script>
+
+
+<script>
+const panelData = {
+  pcc: {
+    image:"pcc-panel-1.jpeg", images:["pcc-panel-3.jpeg","pcc-panel-1.jpeg","pcc-panel-2.jpeg"],
+    name:"PCC PANELS", tag:"MAIN DISTRIBUTION",
+    desc:"Main LT power distribution and protection engineered for reliable project electrical systems.",
+    specs:[["63–4000A","MCCB / ACB incomers"],["AL BUSBAR","High-quality system"],["CRCA","1.6 / 2.0 mm"],["IP55","Outdoor protection"],["FRLS","Polycab wiring"],["CUSTOM","Application specific"]]
+  },
+  apfc: {
+    image:"apfc-panel-1.jpeg", images:["apfc-panel-1.jpeg"], name:"APFC PANELS", tag:"POWER FACTOR CORRECTION",
+    desc:"Automatic power-factor correction for efficient electrical distribution.",
+    specs:[["63–4000A","Incomers"],["MCCB / ACB","Protection"],["AL BUSBAR","High-quality system"],["CRCA","1.6 / 2.0 mm"],["IP55","Outdoor options"],["FRLS","Polycab wiring"]]
+  },
+  pdb: {
+    image:"pdb-floor-panel.jpeg", images:["pdb-floor-panel.jpeg","pdb-plot-box.jpeg"], name:"POWER DISTRIBUTION BOXES", tag:"COMPACT DISTRIBUTION",
+    desc:"Compact, application-specific distribution and protection for project electrical networks.",
+    specs:[["MCCB / MCB","Protection"],["AL BUSBAR","High-quality system"],["CRCA","1.6 / 2.0 mm"],["IP55","Outdoor options"],["FRLS","Polycab wiring"],["CUSTOM","Application specific"]]
+  },
+  feeder: {
+    image:"feeder-pillar-1.jpeg", images:["feeder-pillar-1.jpeg","feeder-pillar-2.jpeg","feeder-pillar-3.jpeg"],
+    name:"FEEDER PILLARS", tag:"OUTDOOR DISTRIBUTION",
+    desc:"Robust outdoor distribution assemblies for layouts, infrastructure and common-area systems.",
+    specs:[["MCCB / ACB","Incomers"],["AL BUSBAR","High-quality system"],["CRCA","1.6 / 2.0 mm"],["IP55","Outdoor protection"],["FRLS","Polycab wiring"],["CUSTOM","Application specific"]]
+  },
+  meter: {
+    image:"meter-board-1.jpeg", images:["meter-board-1.jpeg","meter-board-2.jpeg","meter-board-3.jpeg","meter-board-4.jpeg","meter-board-5.jpeg"], name:"METER BOARDS", tag:"METERING & DISTRIBUTION",
+    desc:"Organised metering and distribution assemblies designed around project requirements.",
+    specs:[["METERING","Elmeasure"],["MCCB / MCB","Protection"],["AL BUSBAR","High-quality system"],["CRCA","1.6 / 2.0 mm"],["IP55","Outdoor options"],["FRLS","Polycab wiring"]]
+  },
+  custom: {
+    image:"pcc-panel-2.jpeg", images:["pcc-panel-2.jpeg","pcc-panel-3.jpeg"], name:"CUSTOM LT PANELS", tag:"ENGINEERED TO REQUIREMENT",
+    desc:"Custom LT panel assemblies configured around the project's load, distribution and site requirements.",
+    specs:[["63–4000A","Incomers"],["MCCB / ACB","Protection"],["AL BUSBAR","High-quality system"],["CRCA","1.6 / 2.0 mm"],["IP55","Outdoor options"],["FRLS","Polycab wiring"]]
+  }
+};
+
+
+let panelTimer = null;
+let panelIndex = 0;
+
+function stopPanelRotation(){
+  if(panelTimer){ clearInterval(panelTimer); panelTimer = null; }
+  const count = document.getElementById("panelPhotoCount");
+  if(count) count.textContent = "";
+}
+
+function startPanelRotation(images){
+  stopPanelRotation();
+  if(!images || images.length < 2) return;
+  panelIndex = 0;
+  const count = document.getElementById("panelPhotoCount");
+  count.textContent = "01 / " + String(images.length).padStart(2,"0");
+  panelTimer = setInterval(() => {
+    panelIndex = (panelIndex + 1) % images.length;
+    const img = document.getElementById("panelImage");
+    img.style.opacity = "0";
+    setTimeout(() => {
+      img.src = "assets/" + images[panelIndex];
+      img.onload = () => img.style.opacity = "1";
+      count.textContent = String(panelIndex + 1).padStart(2,"0") + " / " + String(images.length).padStart(2,"0");
+    }, 160);
+  }, 3200);
+}
+
+document.querySelectorAll(".panelSel").forEach(btn => btn.addEventListener("click", () => {
+  document.querySelectorAll(".panelSel").forEach(x => x.classList.remove("active"));
+  btn.classList.add("active");
+  const d = panelData[btn.dataset.key];
+  stopPanelRotation();
+  const img = document.getElementById("panelImage");
+  img.style.opacity = "0";
+  setTimeout(() => {
+    img.src = "assets/" + d.image;
+    img.alt = "BSK " + d.name;
+    img.onload = () => img.style.opacity = "1";
+  }, 120);
+  document.getElementById("panelName").textContent = d.name;
+  document.getElementById("panelTag").textContent = d.tag;
+  document.getElementById("panelDesc").textContent = d.desc;
+  document.getElementById("specGrid").innerHTML = d.specs.map(s => `<div><b>${s[0]}</b><span>${s[1]}</span></div>`).join("");
+  if (d.images) startPanelRotation(d.images);
+}));
+
+
+window.addEventListener("DOMContentLoaded", () => {
+  const first = document.querySelector('.panelSel.active');
+  if (first) first.click();
+});
+</script>
+</body></html>
